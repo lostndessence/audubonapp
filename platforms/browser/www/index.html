@@ -5,7 +5,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Audubon - Pascagoula</title>
 		<script>
-			document.addEventListener("offline", function(){ window.open('../static/', '_self', 'location=no'); }, false);
+			document.addEventListener("offline", function(){ window.open('../static/', '_self', 'location=yes'); }, false);
 		</script>
     </head>
     <body>
@@ -28,7 +28,7 @@
 			// device APIs are available
 			//
 			function onDeviceReady() {
-				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=no');
+				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=yes');
 				/* ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
 				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
 				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
