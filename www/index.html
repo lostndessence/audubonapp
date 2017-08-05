@@ -24,6 +24,9 @@
 			// Wait for device API libraries to load
 			//
 			document.addEventListener("offline", offlineMode, false);
+			if (navigator.network.connection.type == Connection.NONE]{
+			  offlineMode();
+			};
 			document.addEventListener("deviceready", onDeviceReady, false);
 			
 
