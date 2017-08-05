@@ -10,9 +10,9 @@
         <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="inappbrowser.js"></script>
 		<link rel="stylesheet" href="inappbrowser.css" >
-		<div id="Load"></div>
-		<p>Loading...</p>
-		<div id="ajax"></div>
+		<div id="Load"><p>Loading...</p></div>
+		
+
 		
 		<script>
 
@@ -24,11 +24,11 @@
 			// device APIs are available
 			//
 			function onDeviceReady() {
-				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=yes');
-				 ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=no');
+				/* ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
 				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
 				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-				 ref.addEventListener('exit', function(event) { alert(event.type); });
+				 ref.addEventListener('exit', function(event) { alert(event.type); }); */
 			}			
 			
 		</script>
