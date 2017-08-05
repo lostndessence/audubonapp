@@ -3,9 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Audubon - Pascagoula</title>
+        <title>Blank App</title>
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="inappbrowser.js"></script>
+		<link rel="stylesheet" href="inappbrowser.css" >
+		<div id="Load"></div>
+		<p>Loading...</p>
+		<div id="ajax"></div>
+		
+		<script>
+
+			
+			// Wait for device API libraries to load
+			//
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			// device APIs are available
+			//
+			function onDeviceReady() {
+				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=no');
+			}			
+			
+		</script>
     </body>
 </html>
