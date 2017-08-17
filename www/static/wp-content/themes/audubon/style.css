@@ -10,4 +10,104 @@ Version: 1.0.0.1501858839
 Updated: 2017-08-04 15:00:39
 
 */
+@-ms-viewport{
+  width: device-width;
+}
+
+a { text-decoration: none;}
+
+html, body, main#main{
+	font-family: 'Raleway', sans-serif;
+}
+body{overflow:hidden;}
+
+#main{width:1024px;height:768px;margin:auto;overflow:hidden;background:url(./bg.jpg); border-image: url(./top-border.png) 1 round;border-top: 8px solid;}
+
+#main div, #main a, #main p{color:#fff;text-shadow:none;}
+
+#area{padding: 40px;}
+
+#left-column{float:left;width:48%;margin-left:25px;overflow:visible;max-height:768px;padding-top:25px;max-height:565px;position:relative;z-index:5;}
+
+#right-column{float:right;width:45%;margin-right:25px;overflow:scroll;max-height:565px;}
+
+#item-nav{margin:0 auto;max-width:258px;}
+
+p#image-caption {text-align: center; font-size: 21px; padding: 0px; margin: 0px; font-style: italic;}
+
+#featured-image{box-shadow: 4px 5px 10px rgba(0, 0, 0, .7);border-radius:5px;}
+
+#video-icon{ width: 82px; float: left;}
+#carousel-icon{
+    width: 67px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-left: 9px;
+    top: -30px;
+    position: relative;
+}
+
+#item-title{text-align:center;text-transform:uppercase;margin-bottom: 0px;}
+#item-gallery{width: 1200px;overflow: scroll;}
+#item-gallery img{width:100px;}
+
+#logo-footer img{ width: 542px;  margin: 0 auto; text-align: center; position: relative; display: block;bottom: -66px;}
+#logo-header img{ width: 542px;  margin: 0 auto; text-align: center; position: relative; display: block;top: 0px;}
+
+div#lock {
+    width: 34px;
+    position: absolute;
+    right: 16px;
+    bottom: 9px;
+}
+ 
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:1024px;
+        height:300px;
+        position:relative;
+		margin: 0 auto;
+		top: 140px;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+	    border-radius: 10px;
+		border: 1px solid rgba(126, 126, 126, .3);
+		box-shadow: 5px 5px 12px rgba(0, 0, 0, .5);
+      }
+	  
+	  .carousel-caption{ position: absolute;
+    width: 899px;
+    bottom: -130px;
+    z-index: 10;
+    left: 63px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 12px;
+    border-radius: 0 0 10px 10px;display:none;}
+
+	.carousel-caption h3 {text-align: center;font-size: 35px;margin: 0;padding: 0;text-transform:uppercase;}
+	.carousel-caption p{margin-top:0;padding-top:0;padding-left: 20px;padding-right: 20px;}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.gradientback{
+    position: absolute;
+    bottom: 152px;
+    right: 0px;
+    width: 494px;
+    height: 140px;
+    background: linear-gradient(to bottom, rgba(214, 181, 138, .1) 0%,rgba(184, 146, 110, 0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089fff1', endColorstr='#000000',GradientType=0 );
+    border-radius: 0 0 25px 25px;
+}
+
+.clear{clear:both;}
 
