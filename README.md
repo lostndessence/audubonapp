@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# An app that displays Exhibit information for Audubon Pascagoula
 
 ## Usage
 
