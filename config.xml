@@ -5,7 +5,7 @@
         An app that displays Exhibit information for Audubon Pascagoula
     </description>
     <author email="rolando@ad-in.us" href="http://ad-in.us">
-        PhoneGap Team
+        Ad.In Advertising
     </author>
     <content src="index.html" />
     <access origin="*" />
