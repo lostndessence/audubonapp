@@ -31,14 +31,16 @@
 			// device APIs are available
 			//
 			function onDeviceReady() {
-				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=yes');
+				window.open = cordova.InAppBrowser.open;
+				 var ref = window.open('http://67.227.175.97/~audubon/static/', '_self', 'location=no');
 				/* ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
 				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
 				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
 				 ref.addEventListener('exit', function(event) { alert(event.type); }); */
 			}			
 			function offlineMode(){
-				var ref = window.open('../www/static/index.html', '_self', 'location=yes');
+				window.open = cordova.InAppBrowser.open;
+				var ref = window.open('../www/static/index.html', '_self', 'location=no');
 			}
 			
 		</script>
