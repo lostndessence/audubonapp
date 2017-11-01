@@ -33,6 +33,7 @@
 			function onDeviceReady() {
 				window.open = cordova.InAppBrowser.open;
 				 var ref = window.open('http://67.227.175.97/~audubon/audubonapp/static/', '_blank', 'location=no');
+				 StatusBar.hide();
 				/* ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
 				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
 				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
