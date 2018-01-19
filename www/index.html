@@ -32,12 +32,8 @@
 			//
 			function onDeviceReady() {
 				window.open = cordova.InAppBrowser.open;
-				    var options = {
-					  location: 'no',
-					  toolbar: 'no',
-					  closebuttoncaption: 'TEST'
-					};
-				 var ref = window.open('http://67.227.175.97/~audubon/audubonapp/static/', '_blank', options);
+
+				 var ref = window.open('http://67.227.175.97/~audubon/audubonapp/static/', '_blank', 'location=no,toolbar=no');
 				 StatusBar.hide();
 					var hideSb = function(){
 					//        StatusBar.hide;
@@ -51,12 +47,8 @@
 			}			
 			function offlineMode(){
 				window.open = cordova.InAppBrowser.open;
-				    var options = {
-					  location: 'no',
-					  toolbar: 'no',
-					  closebuttoncaption: 'TEST'
-					};				
-				var ref = window.open('../www/static/index.html', '_blank', options);
+		
+				var ref = window.open('../www/static/index.html', '_blank', 'location=no,toolbar=no');
 			}
 			
 		</script>
